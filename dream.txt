@@ -1,0 +1,246 @@
+Web developers dream of creating websites and web applications that are both visually appealing and highly functional. They want their creations to be user-friendly, fast, responsive, and accessible to all types of users, regardless of their abilities or devices.
+
+They also dream of using the latest and greatest web development technologies and frameworks to create cutting-edge websites and applications that push the boundaries of what is possible online. They want to be able to solve complex problems and challenges, and create solutions that are elegant, efficient, and scalable.
+
+Another aspect of the web developer dream is to have the freedom and flexibility to work on projects that align with their passions and interests. They may dream of working for themselves as freelancers or starting their own web development companies, where they can choose their clients and projects and work on their own terms.
+
+Ultimately, the web developer dream is about creating digital experiences that make a positive impact on people's lives, whether by making their work easier, their leisure time more enjoyable, or their access to information and services more efficient and effective.
+
+
+/*=================== HTML ============================*/
+<nav>
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+/*=================== HTML 2 ============================*/
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+/*======================= CSS =======================*/
+nav {
+  background-color: #333;
+  height: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+a.active {
+  background-color: #fff;
+  color: #333;
+}
+
+
+/*======================= CSS 2 =======================*/
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+a.active,
+a:hover {
+  color: #000;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+}
+
+
+
+/*================================= JS =================================*/
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(otherLink => otherLink.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+
+/*================================= JS 2 =================================*/
+window.addEventListener('scroll', () => {
+  const navLinks = document.querySelectorAll('header nav ul li a');
+  
+  const fromTop = window.scrollY;
+  
+  navLinks.forEach(link => {
+    const section = document.querySelector(link.hash);
+    
+    if (section.offsetTop <= fromTop + 150 && section.offsetTop + section.offsetHeight > fromTop + 150) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+});
+
+
+
+/*========================== Fiver Gig Description ===========================*/
+
+1.====================
+=======================
+Sure, here's an example gig description for a web designer on Fiverr:
+
+Title: Professional Web Design Services
+
+Description:
+
+Are you looking for a professional web designer who can create a stunning and responsive website for your business or personal use? Look no further! 
+
+With over [insert number] years of experience in web design, I specialize in creating custom websites that are tailored to meet your specific needs and goals. 
+
+My services include:
+
+- Custom website design and development
+- Responsive design for mobile and tablet devices
+- User-friendly interface and navigation
+- Search engine optimization (SEO) for improved visibility and traffic
+- Integration with social media and other marketing tools
+- E-commerce functionality for online stores
+- Content creation and copywriting
+- Ongoing maintenance and support
+
+I use the latest tools and technologies, including HTML5, CSS3, JavaScript, and WordPress, to create websites that are modern, fast, and visually appealing. 
+
+I am committed to delivering high-quality work that exceeds your expectations, and I offer unlimited revisions until you are 100% satisfied with the final product.
+
+Contact me today to discuss your web design needs and get started on creating your dream website!
+
+2.======================================
+=========================================================
+Sure, here's an example gig description for a web designer on Fiverr that emphasizes SEO:
+
+Title: Professional SEO-Friendly Web Design Services
+
+Description:
+
+Are you looking for a professional web designer who can create a stunning website that is also optimized for search engines? Look no further!
+
+With over [insert number] years of experience in web design and SEO, I specialize in creating custom websites that not only look great, but also rank well in search results.
+
+My services include:
+
+- Custom website design and development with a focus on SEO
+- Responsive design for mobile and tablet devices
+- User-friendly interface and navigation for improved user experience
+- Keyword research and optimization for improved visibility and traffic
+- Integration with Google Analytics and other tracking tools for monitoring and analysis
+- Schema markup implementation for improved search engine understanding
+- Content creation and copywriting with SEO best practices in mind
+- Ongoing maintenance and support to ensure continued optimization
+
+I use the latest tools and technologies, including HTML5, CSS3, JavaScript, and WordPress, to create websites that are modern, fast, and visually appealing, while also incorporating best practices for SEO.
+
+I am committed to delivering high-quality work that exceeds your expectations, and I offer unlimited revisions until you are 100% satisfied with the final product.
+
+Contact me today to discuss your web design and SEO needs and get started on creating a website that not only looks great, but also drives traffic and leads to your business!
+
+
+==========================================================================
+
+Title: Professional Web Designer
+
+Description:
+
+Hi there! I am a professional web designer with over [insert number] years of experience in creating custom, high-quality websites for businesses and individuals.
+
+My areas of expertise include:
+
+Custom website design and development
+Responsive design for mobile and tablet devices
+User-friendly interface and navigation for improved user experience
+Search engine optimization (SEO) for improved visibility and traffic
+E-commerce functionality for online stores
+Integration with social media and other marketing tools
+Content creation and copywriting
+Ongoing maintenance and support
+I use the latest tools and technologies, including HTML5, CSS3, JavaScript, and WordPress, to create websites that are modern, fast, and visually appealing. I am committed to delivering high-quality work that meets your specific needs and goals, and I offer unlimited revisions until you are 100% satisfied with the final product.
+
+If you're looking for a professional web designer who can create a custom website that stands out from the crowd and drives traffic to your business, look no further! Contact me today to discuss your project and get started on creating your dream website.
+
+
+
+
+
